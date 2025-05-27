@@ -1,0 +1,37 @@
+### POST buat menu baru
+POST https://hazel-airlock-451115-h0.et.r.appspot.com/api/menu
+Content-Type: application/json
+
+{
+  "nama": "Nasi Goreng",
+  "resep": "- Nasi 200gr"
+}
+
+###
+
+### GET semua menu
+GET https://hazel-airlock-451115-h0.et.r.appspot.com/api/menu
+Content-Type: application/json
+
+###
+
+### GET menu by ID
+GET https://hazel-airlock-451115-h0.et.r.appspot.com/api/menu/2
+Content-Type: application/json
+
+###
+
+### PUT update menu
+PUT https://hazel-airlock-451115-h0.et.r.appspot.com/api/menu/2
+Content-Type: application/json
+
+{
+  "nama": "Cibodas",
+  "resep": "Cipete"
+}
+
+###
+
+### DELETE menu
+DELETE https://hazel-airlock-451115-h0.et.r.appspot.com/api/menu/2
+Content-Type: application/json

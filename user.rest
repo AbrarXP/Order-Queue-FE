@@ -1,0 +1,48 @@
+### POST buat user baru
+POST https://hazel-airlock-451115-h0.et.r.appspot.com/api/register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "email": "testusesr@example.com",
+  "password": "123"
+}
+
+###
+
+### login user
+POST https://hazel-airlock-451115-h0.et.r.appspot.com/api/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123"
+}
+
+### GET semua user
+GET https://hazel-airlock-451115-h0.et.r.appspot.com/api/users
+Content-Type: application/json
+
+###
+
+### GET user by ID
+GET https://hazel-airlock-451115-h0.et.r.appspot.com/api/users/2
+Content-Type: application/json
+
+###
+
+### PUT update user
+PUT https://hazel-airlock-451115-h0.et.r.appspot.com/api/users/2
+Content-Type: application/json
+
+{
+  "username": "bagus2",
+  "email": "updated@example.com",
+  "password": "123"
+}
+
+###
+
+### DELETE user
+DELETE https://hazel-airlock-451115-h0.et.r.appspot.com/api/users/3
+Content-Type: application/json
